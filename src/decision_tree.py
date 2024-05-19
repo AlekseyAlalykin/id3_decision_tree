@@ -1,14 +1,13 @@
 import math
-import pandas as pd
 from operator import itemgetter
 
 
 class DecisionTree:
-    def __init__(self, data, target, positive, parent_val, parent):
+    def __init__(self, data, target, positive, parent_value='', parent=None):
         self.data = data
         self.target = target
         self.positive = positive
-        self.parent_value = parent_val
+        self.parent_value = parent_value
         self.parent = parent
         self.decision = None
         self.children = []
